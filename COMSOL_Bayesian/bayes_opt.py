@@ -89,9 +89,6 @@ def BayesianOptimization(modelFolder):
     train_obj = exact_obj + NOISE_SE*torch.randn_like(exact_obj)
     exact_con = constraint_ftn(train_x).unsqueeze(-1)
     train_con = exact_con + NOISE_SE*torch.randn_like(exact_con)
-    # print(train_x.shape)
-    # print(exact_obj.shape)
-    # print(exact_con.shape)
     best_observed_value = weighted_obj(train_x, exact_obj).max().item()
 
 
