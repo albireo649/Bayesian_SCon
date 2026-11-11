@@ -1,0 +1,95 @@
+Geometry = GenFormat {
+11  S
+C      H
+1 1     11.544130562244620     12.953025275796298     13.357788204629891
+2 2     11.656220820954763     13.018808513635275     14.485091252023244
+3 2     11.734231498996881     13.930037044208966     12.881569915929495
+4 1     12.727186772973068     12.143085107520935     12.709544858326494
+5 2     13.433498699090382     12.137982694818902     13.559587390953423
+6 2     12.432354272696331     11.080953944661154     12.584775154643463
+7 2     10.524906787613054     12.648606017127543     12.992545959828107
+8 1     13.244776146589071     12.815043069159474     11.433615240842443
+9 2     12.755032939559202     13.819689129171833     11.594371079554330
+10 2     14.333120578277880     13.020532683522044     11.487765172265501
+11 2     12.938869710018382     12.547158123773386     10.402994395605166
+0.000000000000000      0.000000000000000      0.000000000000000
+25.000000000000000      0.000000000000000      0.000000000000000
+0.000000000000000     25.000000000000000      0.000000000000000
+0.000000000000000      0.000000000000000     25.000000000000000
+}
+Analysis = {
+  PrintForces = Yes
+  WriteEigenvectors = No
+  WriteBandOut = Yes
+  MullikenAnalysis = Yes
+  WriteNetCharges = No
+  WriteBondPopulation = No
+  WriteBondEnergy = No
+  WriteBondOrder = No
+  AtomResolvedEnergies = No
+  PrintLatticeInformation = Yes
+}
+Hamiltonian = DFTB {
+  KPointsAndWeights = SupercellFolding {
+1 0 0
+0 1 0
+0 0 1
+0.0 0.0 0.0
+  }
+  MaxAngularMomentum = {
+    C = p
+    H = s
+  }
+  SlaterKosterFiles = Type2FileNames {
+    Prefix = ./corrupt_pp/
+    Separator = "-"
+    Suffix = ".skf"
+    LowerCaseTypeName = No
+  }
+  Differentiation = FiniteDiff {
+    Delta = 1.0000000000000000E-002
+  }
+  PolynomialRepulsive = {}
+  SCC = No
+  Hybrid = None {}
+  OldSKInterpolation = No
+  SpinPolarisation = {}
+  ElectricField = {}
+  Solver = RelativelyRobust {}
+  Charge = 0.0000000000000000
+  ReduceKPointsByInversion = Yes
+  Dispersion = {}
+  Solvation = {}
+  ElectronicConstraints = {}
+  Filling = Fermi {
+    Temperature = 0.0000000000000000
+    IndependentKFilling = No
+  }
+}
+Options = {
+  WriteResultsTag = Yes
+  WriteDetailedOut = Yes
+  WriteAutotestTag = No
+  WriteDetailedXML = No
+  RandomSeed = 0
+  WriteHS = No
+  WriteRealHS = No
+  MinimiseMemoryUsage = No
+  ShowFoldedCoords = No
+  TimingVerbosity = 1
+  WriteCharges = Yes
+  WriteChargesAsText = No
+  WriteAllAtomGeometry = No
+  BinaryAccessTypes = {
+ "stream"
+  }
+}
+ParserOptions = {
+  IgnoreUnprocessedNodes = Yes
+  ParserVersion = 15
+  WriteHSDInput = Yes
+  StopAfterParsing = No
+}
+Reks = None {}
+Driver = {}
+ExcitedState = {}

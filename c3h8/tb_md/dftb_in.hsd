@@ -1,0 +1,31 @@
+Geometry = GenFormat { 
+    <<< "geo_end.gen" 
+} 
+ 
+Analysis { 
+   CalculateForces = Yes 
+   } 
+Hamiltonian = DFTB{ 
+   KPointsAndWeights = SupercellFolding { 
+      1 0 0 
+      0 1 0 
+      0 0 1 
+      0.0 0.0 0.0 
+   } 
+   MaxAngularMomentum = { 
+      C = p 
+      H = s 
+   } 
+   SlaterKosterFiles = Type2FileNames{ 
+      Prefix = ./corrupt_pp/ 
+      Separator = "-" 
+      Suffix = ".skf" 
+      } 
+   } 
+Options { 
+   WriteResultsTag = Yes 
+   } 
+ParserOptions { 
+   IgnoreUnprocessedNodes = Yes 
+   ParserVersion = 1 
+} 

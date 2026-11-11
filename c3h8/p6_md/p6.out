@@ -1,0 +1,154 @@
+ Priroda 11 (2011.11.10)
+ copyright (c) D.N. Laikov
+
+ date: Wed Sep 30 09:24:50 2026
+
+ parallel on 10 processors
+ node  0: 'w10lx-nclabsrv'
+ node  1: 'w10lx-nclabsrv'
+ node  2: 'w10lx-nclabsrv'
+ node  3: 'w10lx-nclabsrv'
+ node  4: 'w10lx-nclabsrv'
+ node  5: 'w10lx-nclabsrv'
+ node  6: 'w10lx-nclabsrv'
+ node  7: 'w10lx-nclabsrv'
+ node  8: 'w10lx-nclabsrv'
+ node  9: 'w10lx-nclabsrv'
+
+ Memory: 2000m (2000m)
+ Disk:   80g './'
+
+
+ molecule input: ''
+ 11 atoms, 26 electrons
+
+ Atomic Coordinates:
+   6    11.24255259  12.94182557  12.53289692
+   1    11.13036071  13.52496286  13.51457205
+   1    11.46968564  13.83572857  11.87011648
+   6    12.48944141  12.04251335  12.46571563
+   1    12.49449671  11.39509141  13.33567519
+   1    12.38118711  11.38745057  11.56007642
+   1    10.31569252  12.31119345  12.41307156
+   6    13.76924318  12.95243011  12.49070853
+   1    13.94346123  13.18554852  11.43111068
+   1    13.59252502  13.80608677  13.21283494
+   1    14.65785197  12.38998054  12.78979319
+ #
+  formula: H8C3
+  internuclear distances:
+  C1    |  H1   : 1.14731  H2   : 1.13575  C2   : 1.53883  H5   : 1.12744
+  H1    |  C1   : 1.14731
+  H2    |  C1   : 1.13575
+  C2    |  C1   : 1.53883  H3   : 1.08444  H4   : 1.12295  C3   : 1.57050
+  H3    |  C2   : 1.08444
+  H4    |  C2   : 1.12295
+  H5    |  C1   : 1.12744
+  C3    |  C2   : 1.57050  H6   : 1.09884  H7   : 1.13200  H8   : 1.09336
+  H6    |  C3   : 1.09884
+  H7    |  C3   : 1.13200
+  H8    |  C3   : 1.09336
+     largest =    4.35918
+
+
+ Basis set input: './mixed.bas'
+    1   6  C :  25/39  : {6,3,2}/{11,6,2}
+    2   1  H :   6/8   : {3,1}/{5,1}
+    3   1  H :   6/8   : {3,1}/{5,1}
+    4   6  C :  25/39  : {6,3,2}/{11,6,2}
+    5   1  H :   6/8   : {3,1}/{5,1}
+    6   1  H :   6/8   : {3,1}/{5,1}
+    7   1  H :   6/8   : {3,1}/{5,1}
+    8   6  C :  25/39  : {6,3,2}/{11,6,2}
+    9   1  H :   6/8   : {3,1}/{5,1}
+   10   1  H :   6/8   : {3,1}/{5,1}
+   11   1  H :   6/8   : {3,1}/{5,1}
+
+ Basis set input: './mixed.bas'
+    1   6  C :  41/41  : {10,3,3,1}/{10,3,3,1}
+    2   1  H :  11/11  : {5,2}/{5,2}
+    3   1  H :  11/11  : {5,2}/{5,2}
+    4   6  C :  41/41  : {10,3,3,1}/{10,3,3,1}
+    5   1  H :  11/11  : {5,2}/{5,2}
+    6   1  H :  11/11  : {5,2}/{5,2}
+    7   1  H :  11/11  : {5,2}/{5,2}
+    8   6  C :  41/41  : {10,3,3,1}/{10,3,3,1}
+    9   1  H :  11/11  : {5,2}/{5,2}
+   10   1  H :  11/11  : {5,2}/{5,2}
+   11   1  H :  11/11  : {5,2}/{5,2}
+
+ +---------------------------------------
+ | Number of atoms                     11
+ | Charge of molecule                   0
+ | Spin multiplicity                    1
+ | Number of alpha electrons           13
+ | Number of beta  electrons           13
+ | Number of core  electrons            3
+ | Theoretical Method                 DFT
+ | Approximation to E(xc)             PBE
+ | Dimension of wavefunction basis    123
+ | Dimension of   auxiliary  basis    211
+ | Hamiltonian: non-relativistic
+ +---------------------------------------
+
+ scf options: conv=1.0e-05, 1.0e-02; iter=2000,16
+ cut-off for S,T,V integrals: 1.0e-10 (1.0e-06)
+
+ grid: accuracy=1.0e-07,1.0e-05, cut=1.0e-09,1.0e-07
+
+ Initial Guess
+ time: atomic calculations              :     0.0  [     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0 ]  10.1%     0.0
+
+ vectors from 'vec.data'
+ time: Initial Guess                    :     0.0  [     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0 ]  93.9%     0.0
+
+ SCF Equations:
+ time: One-Electron Integrals           :     0.0  [     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0 ]  35.5%     0.0
+ time: Inversion of V-Matrix            :     0.0  [     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0 ]  10.6%     0.0
+ time: Orthogonalize                    :     0.0  [     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0 ]  94.6%     0.0
+
+ it.       energy       energy change    gradient     time
+ Grid:    53112 points
+   0   -118.9860163886   0.0000000000   0.00241961      1.6
+   1   -118.9863779680  -0.0003615793   0.00229708      2.0
+   2   -118.9864841770  -0.0001062090   0.00126755      2.3
+   3   -118.9865467071  -0.0000625301   0.00016195      2.6
+   4   -118.9865484410  -0.0000017339   0.00009886      2.9
+   5   -118.9865489736  -0.0000005326   0.00005587      3.3
+
+  process 0 got signal 2
+
+ ============================================================
+
+ Memory used =     7432 KB
+ Memory used =      876 KB
+ Memory used =      876 KB
+ Memory used =      886 KB
+ Memory used =      876 KB
+ Memory used =      876 KB
+ Memory used =      876 KB
+ Memory used =      886 KB
+ Memory used =      876 KB
+ Memory used =      876 KB
+  Disk  used =    78765 KB,          5660 KB written,        11003 KB read
+  Disk  used =        0 KB,             0 KB written,            0 KB read
+  Disk  used =        0 KB,             0 KB written,            0 KB read
+  Disk  used =        0 KB,             0 KB written,            0 KB read
+  Disk  used =        0 KB,             0 KB written,            0 KB read
+  Disk  used =        0 KB,             0 KB written,            0 KB read
+  Disk  used =        0 KB,             0 KB written,            0 KB read
+  Disk  used =        0 KB,             0 KB written,            0 KB read
+  Disk  used =        0 KB,             0 KB written,            0 KB read
+  Disk  used =        0 KB,             0 KB written,            0 KB read
+ Message passing statistics:
+ node     sent KB   # msg    time          received      time
+    0        5848    1280     0.0        1786     569     0.1
+    1         745     387     0.0        4714    1112     0.0
+    2         745     385     0.0        4716    1112     0.0
+    3         817     385     0.0        4786    1112     0.0
+    4         755     385     0.1        4724    1112     0.0
+    5         758     387     0.0        4726    1112     0.0
+    6         758     385     0.0        4728    1112     0.0
+    7         876     385     0.0        4845    1112     0.1
+    8         770     387     0.0        4738    1112     0.0
+    9         732     387     0.0        4700    1112     0.0
