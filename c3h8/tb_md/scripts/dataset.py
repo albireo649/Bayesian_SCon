@@ -4,7 +4,7 @@ import numpy as np
 
 
 def test_md(prefix='../corrupt_pp/'):
-	frames = read('../../p6_md/md.traj', index=':')
+	frames = read('../opt.traj', index=':')
 
 	ref_energy = []
 	ref_forces = []
