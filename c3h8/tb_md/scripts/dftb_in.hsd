@@ -17,7 +17,7 @@ Hamiltonian = DFTB{
       H = s 
    } 
    SlaterKosterFiles = Type2FileNames{ 
-      Prefix = /home/basic-user/work/exercise/c3h8/tb_md/corrupt_pp/ 
+      Prefix = ../trans3d-0-1/ 
       Separator = "-" 
       Suffix = ".skf" 
       } 

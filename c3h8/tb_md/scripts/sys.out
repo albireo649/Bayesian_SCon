@@ -36,9 +36,9 @@ Line: 6-6 (File: dftb_in.hsd)
 ***  Done.
 
 Reading SK-files:
-/home/basic-user/work/exercise/c3h8/tb_md/corrupt_pp/C-C.skf
-/home/basic-user/work/exercise/c3h8/tb_md/corrupt_pp/C-H.skf
-/home/basic-user/work/exercise/c3h8/tb_md/corrupt_pp/H-H.skf
+./../trans3d-0-1/C-C.skf
+./../trans3d-0-1/C-H.skf
+./../trans3d-0-1/H-H.skf
 Done.
 
 
@@ -49,8 +49,13 @@ Starting initialization...
 WARNING!
 -> Dipole printed for extended system : value printed is not well defined
 OpenMP threads:              16
-Chosen random seed:          433934751
-Current stacksize:           unlimited
+Chosen random seed:          2359969
+Current stacksize:           8 [Mb] (recommended: unlimited)
+WARNING!
+-> Current stacksize not set to unlimited or hard limit, which might cause
+   random crashes (e.g. segmentation faults). It is advised to unlimit the
+   stacksize by issuing 'ulimit -s unlimited' (Linux) or setting it to the 
+   hard limit by 'ulimit -s hard' (Mac) in advance.
 Mode:                        Static calculation
 Self consistent charges:     No
 Spin polarisation:           No
@@ -84,20 +89,19 @@ Angles (degrees) between lattice vectors
  vector 2 and vector 3 :    90.000000
 Volume:                              0.105443E+06 au^3   0.156250E+05 A^3
 
-Total Energy:                       -9.4426513610 H         -256.9476 eV
-Extrapolated to 0K:                 -9.4426513610 H         -256.9476 eV
-Total Mermin free energy:           -9.4426513610 H         -256.9476 eV
-Force related energy:               -9.4426513610 H         -256.9476 eV
+Total Energy:                       -8.1729096385 H         -222.3962 eV
+Extrapolated to 0K:                 -8.1729096385 H         -222.3962 eV
+Total Mermin free energy:           -8.1729096385 H         -222.3962 eV
+Force related energy:               -8.1729096385 H         -222.3962 eV
 
-Pressure:                            0.778315E-06 au     0.228988E+08 Pa
+Pressure:                            0.415596E-06 au     0.122273E+08 Pa
 
 --------------------------------------------------------------------------------
 DFTB+ running times                          cpu [s]             wall clock [s]
 --------------------------------------------------------------------------------
-Pre-SCC initialisation                 +       0.20 ( 42.3%)       0.01 ( 36.8%)
-SCC                                    +       0.03 (  5.7%)       0.00 (  5.3%)
-Post-SCC processing                    +       0.24 ( 51.9%)       0.02 ( 57.9%)
+Pre-SCC initialisation                 +       0.20 ( 79.0%)       0.01 ( 75.0%)
+Post-SCC processing                    +       0.04 ( 17.4%)       0.00 ( 15.0%)
 --------------------------------------------------------------------------------
-Missing                                +       0.00 (  0.1%)       0.00 (  0.0%)
-Total                                  =       0.46 (100.0%)       0.04 (100.0%)
+Missing                                +       0.01 (  3.6%)       0.00 ( 10.0%)
+Total                                  =       0.25 (100.0%)       0.02 (100.0%)
 --------------------------------------------------------------------------------

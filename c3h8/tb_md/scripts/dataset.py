@@ -3,8 +3,8 @@ from ase.calculators.dftb import Dftb
 import numpy as np
 
 
-def test_md():
-	frames = read('/home/basic-user/work/exercise/c3h8/p6_md/md.traj', index=':')
+def test_md(prefix='../corrupt_pp/'):
+	frames = read('../../p6_md/md.traj', index=':')
 
 	ref_energy = []
 	ref_forces = []
@@ -20,8 +20,7 @@ def test_md():
 
 	for i, atoms in enumerate(frames):
 		calc = Dftb(label='sys',
-	    	#Hamiltonian_SlaterKosterFiles_Prefix='/home/wonk/src/par/trans3d-0-1/',
-	    	Hamiltonian_SlaterKosterFiles_Prefix='/home/basic-user/work/exercise/c3h8/tb_md/corrupt_pp/',
+	    	Hamiltonian_SlaterKosterFiles_Prefix=prefix,
 	    	Hamiltonian_MaxAngularMomentum_='',
 	    	Hamiltonian_MaxAngularMomentum_C='p',
 	    	Hamiltonian_MaxAngularMomentum_H='s',
