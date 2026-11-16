@@ -49,7 +49,7 @@ Starting initialization...
 WARNING!
 -> Dipole printed for extended system : value printed is not well defined
 OpenMP threads:              16
-Chosen random seed:          2359969
+Chosen random seed:          257749982
 Current stacksize:           8 [Mb] (recommended: unlimited)
 WARNING!
 -> Current stacksize not set to unlimited or hard limit, which might cause
@@ -89,19 +89,20 @@ Angles (degrees) between lattice vectors
  vector 2 and vector 3 :    90.000000
 Volume:                              0.105443E+06 au^3   0.156250E+05 A^3
 
-Total Energy:                       -8.1729096385 H         -222.3962 eV
-Extrapolated to 0K:                 -8.1729096385 H         -222.3962 eV
-Total Mermin free energy:           -8.1729096385 H         -222.3962 eV
-Force related energy:               -8.1729096385 H         -222.3962 eV
+Total Energy:                       -8.1814885135 H         -222.6296 eV
+Extrapolated to 0K:                 -8.1814885135 H         -222.6296 eV
+Total Mermin free energy:           -8.1814885135 H         -222.6296 eV
+Force related energy:               -8.1814885135 H         -222.6296 eV
 
-Pressure:                            0.415596E-06 au     0.122273E+08 Pa
+Pressure:                           -0.731529E-08 au    -0.215223E+06 Pa
 
 --------------------------------------------------------------------------------
 DFTB+ running times                          cpu [s]             wall clock [s]
 --------------------------------------------------------------------------------
-Pre-SCC initialisation                 +       0.20 ( 79.0%)       0.01 ( 75.0%)
-Post-SCC processing                    +       0.04 ( 17.4%)       0.00 ( 15.0%)
+Pre-SCC initialisation                 +       0.40 ( 44.7%)       0.05 ( 58.2%)
+SCC                                    +       0.14 ( 16.3%)       0.01 ( 14.3%)
+Post-SCC processing                    +       0.34 ( 38.8%)       0.03 ( 27.5%)
 --------------------------------------------------------------------------------
-Missing                                +       0.01 (  3.6%)       0.00 ( 10.0%)
-Total                                  =       0.25 (100.0%)       0.02 (100.0%)
+Missing                                +       0.00 (  0.1%)       0.00 (  0.0%)
+Total                                  =       0.88 (100.0%)       0.09 (100.0%)
 --------------------------------------------------------------------------------
