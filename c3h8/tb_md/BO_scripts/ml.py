@@ -24,10 +24,13 @@ dtype = torch.double
 SMOKE_TEST = os.environ.get("SMOKE_TEST")
 
 # build model
-def generate_model(train_x, train_obj, state_dict = None):
+# NOISE_STD = 0.01
+# train_yvar = torch.tensor(NOISE_STD**2, device=device, dtype=dtype).expand_as(train_obj)
+def generate_model(train_x, train_obj, state_dict = None, train_yvar = None):
     model_obj = SingleTaskGP(
         train_x,
         train_obj,
+        # train_yvar,
         input_transform=Normalize(d=train_x.shape[-1]),
         ).to(train_x)
 
@@ -38,11 +41,11 @@ def generate_model(train_x, train_obj, state_dict = None):
     print("model is generated")
     return mll, model
 
-def opimization_observation(acq_func, model, train_x, train_obj, num_restarts=10, raw_samples=512):
+def optimization_observation(acq_func, model, train_x, train_obj, num_restarts=10, raw_samples=512):
     # Optimize acquisition function
     with warnings.catch_warnings():
         warnings.filterwarnings("ignore", category=BadInitialCandidatesWarning)
-        new_x, acq_value = optimize_acqf(
+        new_x, _ = optimize_acqf(
             acq_function=acq_func,
             bounds=torch.stack([torch.zeros(train_x.shape[-1], dtype=dtype), torch.ones(train_x.shape[-1], dtype=dtype)]),
             q=1,

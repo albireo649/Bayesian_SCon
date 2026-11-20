@@ -36,9 +36,9 @@ Line: 6-6 (File: dftb_in.hsd)
 ***  Done.
 
 Reading SK-files:
-./../trans3d-0-1/C-C.skf
-./../trans3d-0-1/C-H.skf
-./../trans3d-0-1/H-H.skf
+./../corrupt_pp/C-C.skf
+./../corrupt_pp/C-H.skf
+./../corrupt_pp/H-H.skf
 Done.
 
 
@@ -49,7 +49,7 @@ Starting initialization...
 WARNING!
 -> Dipole printed for extended system : value printed is not well defined
 OpenMP threads:              16
-Chosen random seed:          257749982
+Chosen random seed:          11821005
 Current stacksize:           8 [Mb] (recommended: unlimited)
 WARNING!
 -> Current stacksize not set to unlimited or hard limit, which might cause
@@ -89,20 +89,20 @@ Angles (degrees) between lattice vectors
  vector 2 and vector 3 :    90.000000
 Volume:                              0.105443E+06 au^3   0.156250E+05 A^3
 
-Total Energy:                       -8.1814885135 H         -222.6296 eV
-Extrapolated to 0K:                 -8.1814885135 H         -222.6296 eV
-Total Mermin free energy:           -8.1814885135 H         -222.6296 eV
-Force related energy:               -8.1814885135 H         -222.6296 eV
+Total Energy:                      -12.3638962905 H         -336.4387 eV
+Extrapolated to 0K:                -12.3638962905 H         -336.4387 eV
+Total Mermin free energy:          -12.3638962905 H         -336.4387 eV
+Force related energy:              -12.3638962905 H         -336.4387 eV
 
-Pressure:                           -0.731529E-08 au    -0.215223E+06 Pa
+Pressure:                            0.478778E-05 au     0.140861E+09 Pa
 
 --------------------------------------------------------------------------------
 DFTB+ running times                          cpu [s]             wall clock [s]
 --------------------------------------------------------------------------------
-Pre-SCC initialisation                 +       0.40 ( 44.7%)       0.05 ( 58.2%)
-SCC                                    +       0.14 ( 16.3%)       0.01 ( 14.3%)
-Post-SCC processing                    +       0.34 ( 38.8%)       0.03 ( 27.5%)
+Pre-SCC initialisation                 +       0.44 ( 45.3%)       0.03 ( 46.4%)
+SCC                                    +       0.19 ( 19.7%)       0.01 ( 18.8%)
+Post-SCC processing                    +       0.34 ( 34.9%)       0.02 ( 33.3%)
 --------------------------------------------------------------------------------
-Missing                                +       0.00 (  0.1%)       0.00 (  0.0%)
-Total                                  =       0.88 (100.0%)       0.09 (100.0%)
+Missing                                +       0.00 (  0.0%)       0.00 (  1.4%)
+Total                                  =       0.98 (100.0%)       0.07 (100.0%)
 --------------------------------------------------------------------------------

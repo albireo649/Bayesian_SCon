@@ -1,12 +1,14 @@
 from dataset import normalize, denormalize, calculate_loss, modify_skf, test_md, trainset
 from ml import generate_model, opimization_observation
-from botorch.acquisition import (qExpectedImprovement, qNoisyExpectedImprovement)
+from botorch.acquisition import (qLogExpectedImprovement, qNoisyExpectedImprovement)
+
+import os
 
 
 train_x, train_obj = trainset(n_samples=10, lower=-0.6, upper=0.0)
 mll, model = generate_model(train_x, train_obj)
-new_x_set, new_obj_set = opimization_observation(qLogExpectedImprovement(model=model, best_f=train_obj.max()), model, train_x, train_obj)
-mll_updated, model_updated = generate_model(new_x_set, new_obj_set)
+new_x, new_obj = opimization_observation(qLogExpectedImprovement(model=model, best_f=train_obj.max()), model, train_x, train_obj)
+mll_new, model_new = generate_model(new_x, new_obj)
 
 for i in range(10):
     new_x, new_obj = opimization_observation(qLogExpectedImprovement(model=model_new, best_f=train_obj.max()), model, new_x, new_obj)
